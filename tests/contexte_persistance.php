@@ -1,9 +1,4 @@
 <?php
-if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-    // Pour Windows
-    $process = proc_open('cls', [], $pipes);
-    proc_close($process);
-}
 
 // Récupérer l'EntityManager
 /**
