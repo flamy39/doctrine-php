@@ -34,3 +34,9 @@ if($post) {
 } else {
     echo "Post non trouvé \n";
 }
+
+// Lister tous les posts dont le nombre de likes est superieur à un nombre donné ($nbLikes)
+$nbLikes = 15;
+$postRepository->findBy(['nbLikes => 15']);
+// Impossible d'utiliser l'opérateur > avec la méthode findBy !
+// Elle se limite uniquement à l'opérateur d'égalité '='
